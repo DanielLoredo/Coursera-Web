@@ -1,2 +1,2 @@
 # Coursera-Web
-Becoming a web developer
+Learning HTML, CSS and JS
