@@ -4,42 +4,49 @@
         <meta charset = "utf-8">
         <title>DanielLoredo</title>
         <style>
-            h1 {
-                color: white;
+            .cTitulo {
+                color:white;
                 font-size: 60px;
                 background-color: black;
                 text-align: center;
+
+
             }
-            h3 {
+            .subTitulos {
                 color: white;
                 font-size: 35px;
                 background-color: black;
+                font-weight: bold;
                 font-family: Arial, Helvetica, sans-serif
             }
-            div {
+            .textoN {
                 color: black;
                 font-size: 15px;
                 background-color: whitesmoke;
                 font-family: Arial, Arial, Helvetica, sans-serif;
+                font-style: italic;
             }
-            p {
+            .centrado {
                 text-align: center;
             }
-            li {
+            .listas {
                 font-size: 20px;
+                font-style: italic;
             }
+            
+
         </style>
     </header>
     <body>
 
-        <h1 id = "inicio">Soy el poderosisimo Daniel</h1>
-        <p><img src = "corgi.jpg" width = "400" height = "300" alt = "Corgi dog image"></p>
-        <h2>Apenas estoy aprendiendo a utilizar html, CSS, JS, entonces esta página se ve de muy poco presupuesto</h2>
+        <h1 id = "inicio", class = "cTitulo">Soy el poderosisimo Daniel</h1>
+        <p class = "centrado"><img src = "corgi.jpg" width = "400" height = "300" alt = "Corgi dog image"></p>
+        <h2 class = "centrado">Apenas estoy aprendiendo a utilizar html, CSS, JS, entonces esta página se ve de muy poco presupuesto</h2>
         
         <section id = "Poderes">
             <div>Ya que eso no importa, te daré una breve descripción de mi</div>
-            <h3>PODERES PRINCIPALES</h3>
-            <ul>
+            <h3 class = "subTitulos">PODERES PRINCIPALES</h3>
+            <ul class = "listas">
                 <li>Tengo el pelo rosa (bueno más o menos)</li>
                 <li>Estoy suavecito y huelo rico</li>
                 <li>Me gustan los corgis</li>
@@ -50,22 +57,22 @@
         </section>
 
         <section id = "LINKS">
-            <div>
+            <div class = "textoN">
                 Ahora si viene lo bueno &gt;:)
             </div>
-            <h3>LINKS a otros lugares</h3>
-            <ul>
-                <li><a href = "index9.html">Mis nudes :O</a></li>
-                <li>La canción de "la vuelta al mundo" de Calle 13: <a href = "https://www.youtube.com/watch?v=v_zZmsFZDaM&ab_channel=elvecindariocalle13">aquí</a></li>
+            <h3 class = "subTitulos">LINKS a otros lugares</h3>
+            <ul class = "listas">
+                <li><a href = "index9.html", >Mis nudes :O</a></li>
+                <li>La canción de "la vuelta al mundo" de Calle 13: <a href = "https://www.youtube.com/watch?v=v_zZmsFZDaM&ab_channel=elvecindariocalle13", target = "_blank">aquí</a></li>
                 <li><a href = "index11.html">Mi cuenta de TINDER</a></li>
                 <li><a href = "index12.html">Agradecimientos</a></li>
             </ul>
         </section>
 
         <section id = "canción">
-            <h3>Aquí te dejo toda la  canción de bebecita bebelin, de nada</h3>
+            <h3 class = "subTitulos">Aquí te dejo toda la  canción de bebecita bebelin, de nada</h3>
             <h5>Es broma esa canción esta muy puerca, aquí te dejo la de "Educando esclavos" de Lytos (Obvio toda de corrido porque me da flojera separar las lineas)</h4>
-            <div>
+            <div class = "textoN">
                 Desde pequeño me impusieron que tenía que ir a la escuela
                 Y hacer lo que me dijeran los profesores sin rechistar
                 Que estudiara que tenía que sacar buenas notas
@@ -124,8 +131,8 @@
         </section>
 
         <section id = "final">
-            <h3>Bienvenido al final</h3>
-            <ul>
+            <h3 class = "subTitulos">Bienvenido al final</h3>
+            <ul class = "listas">
                 <li><a href = "#inicio">Regresar al inicio</a></li>
                 <li><a href = "#Poderes">Ir a poderes</a></li>
                 <li><a href = "#LINKS">Ir a Links</a></li>
