@@ -1,20 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .cTitulo {
     color:white;
     font-size: 60px;
     background-color: black;
     text-align: center;
-
-
+    padding: 30px 0px 10px 0px;
+    margin-bottom: 30px;
 }
 .subTitulos {
     color: white;
+    margin: 30px 0px 30px 0px;
     font-size: 35px;
     background-color: black;
     font-weight: bold;
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif
+    
 }
 .textoN {
     color: black;
+    margin: 40px 0px 10px 0px;
     font-size: 15px;
     background-color: whitesmoke;
     font-family: Arial, Arial, Helvetica, sans-serif;
@@ -22,13 +32,16 @@
 }
 .centrado {
     text-align: center;
+    margin: 15px 0px 15px 0px;
 }
 .listas {
     font-size: 20px;
     width: 600px;
+    padding: 0px 0px 0px 30px;
 }
 footer li{
     list-style: none;
+    
 }
 .italicS {
     font-style: italic;
@@ -39,6 +52,7 @@ body ul.centrado{
 }
 
 body a:link, body a:visited {
+    margin: 5px 0px 0px 10px;
     text-decoration: none;
     background-color: silver;
     color: black;
@@ -65,6 +79,8 @@ footer a:link, footer a:visited{
     margin-bottom: 2px;
     text-align: center;
     font-size: 25px;
+    margin: 2px;
+    
 }
 footer a:active, footer a:hover {
     background-color: gray;
