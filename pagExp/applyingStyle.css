@@ -1,0 +1,81 @@
+.cTitulo {
+    color:white;
+    font-size: 60px;
+    background-color: black;
+    text-align: center;
+
+
+}
+.subTitulos {
+    color: white;
+    font-size: 35px;
+    background-color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+.textoN {
+    color: black;
+    font-size: 15px;
+    background-color: whitesmoke;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.centrado {
+    text-align: center;
+}
+.listas {
+    font-size: 20px;
+    width: 600px;
+}
+footer li{
+    list-style: none;
+}
+.italicS {
+    font-style: italic;
+}
+
+body ul.centrado{
+    list-style: none;
+}
+
+body a:link, body a:visited {
+    text-decoration: none;
+    background-color: silver;
+    color: black;
+    font-size: 30px;
+    display: block;
+    width: 400px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 2px;
+}
+
+body a:hover, body a:active {
+    background-color: gray;
+    color: white;
+}
+
+footer a:link, footer a:visited{
+    text-decoration:  none;
+    background-color: silver;
+    border: 2px black;
+    color: black;
+    display: block;
+    width: 200px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 25px;
+}
+footer a:active, footer a:hover {
+    background-color: gray;
+    color: white;
+    
+}
+
+#Poderes ul.italicS li:nth-child(odd) {
+    background-color: rgb(226, 222, 222);
+}
+#Poderes ul.italicS li:hover {
+    background: gray;
+    color: white;
+}
