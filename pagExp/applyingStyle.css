@@ -95,3 +95,13 @@ footer a:active, footer a:hover {
     background: gray;
     color: white;
 }
+
+#corgiLogo {
+    width: 200px;
+    height: 85px;
+    background: url("corgi2.jpg");
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    background-repeat: no-repeat;
+}
