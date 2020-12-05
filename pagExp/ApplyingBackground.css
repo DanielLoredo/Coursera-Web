@@ -6,19 +6,28 @@
 
 div {
     background-color: gray;
+    position: relative;
+    top: 150px;
+    height: 220px;
 }
 
 p {
     width: 50px;
     height: 50px;
+    border: 2px solid black;
+    margin: 2px;
 }
 
 #p1 {
     background-color: blue;
+    position: relative;
+    float: right;
 }
 
 #p2 {
     background-color: red;
+    clear: right;
+    float: right;
 }
 
 #p3 {
