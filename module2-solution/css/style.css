@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p > span {
+    position: relative;
+    float: right;
+    width: 40%;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: 700;
+    font-size: 30px;
+    border-width: 1px;
+}
+
+#span1 {
+    background-color: red;
+    color: white;
+}
+#span2 {
+    background-color: yellow;
+    color: black;
+}
+#span3 {
+    background-color: blue;
+    color: white;
+}
+
+
+p > a {
+    position: relative;
+    font-weight: 700;
+    float: left;
+    clear: both;
+}
+
+
+p {
+    height: 250px;
+    background-color: silver;
+    position: relative;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.row {
+    width: 100%;
+    clear: both;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        border: 1px solid black;
+        width: 32%;
+        margin-right: 4px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-6#left {
+        float: left;
+        border: 1px solid black;
+        width: 48%;
+    }
+    .col-md-6#right {
+        float: right;
+        border: 1px solid black;
+        width: 48%;
+    }
+    .col-md-12 {
+        float: left;
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        border: 1px solid black;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+
