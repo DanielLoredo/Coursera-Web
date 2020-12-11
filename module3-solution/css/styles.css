@@ -1,0 +1,19 @@
+nav {
+    background-color: gray;
+    font-weight: bold;
+}
+
+#ourMenu {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.addPadding {
+    background-color: gray;
+}
+
+.subtitulos {
+    font-size: 25px;
+    font-weight: bold;
+}
