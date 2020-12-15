@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 5px 0px 5px 0px;
+}
+
+body {
+    background-color: white;
+}
+
+.normalComment {
+    background-color: white;
+    height: auto;
+    border: 1px solid rgb(82, 77, 77);
+    border-radius: 10px;
+    width: 49%;
+}
+
+img {
+    margin-top: 8px;
+    height: 90px;
+    width: 90px;
+    border: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.headerComment {
+    padding-top: 5px;
+}
+
+.nameComment {
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+
+.dateComment {
+    font-size: 15px;
+    float: right;
+    color: silver;
+}
+
+.descriptionComment {
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .comment-left {
+        margin-left: 4%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .dateComment {
+        visibility: hidden;
+    }
+}
+
+
