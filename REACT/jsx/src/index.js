@@ -10,20 +10,20 @@ const App = () => {
     <div>
         <div class = "container">
             <div class = "row">
-                <CommentDetail author="Daniel Loredo" dateAgo = "Hace unos segundos" foto = "img/daniel.jpg" />
-                <CommentDetail author="Portilla" dateAgo = "Hace 2 horas" foto = "img/portilla.jpg"/>
+                <CommentDetail author="Daniel Loredo" dateAgo = "Hace unos segundos" foto = "img/corgi.jpg" />
+                <CommentDetail author="Portilla" dateAgo = "Hace 2 horas" foto = "img/corgi.jpg"/>
             </div>
             <div class = "row">
-                <CommentDetail author="El león Valencia" dateAgo = "Hoy a las 5:00pm" foto = "img/valencia.jpg"/>
-                <CommentDetail author="Jorge Loredo" dateAgo = "Ayer" foto = "img/jorge.jpg"/>
+                <CommentDetail author="El león Valencia" dateAgo = "Hoy a las 5:00pm" foto = "img/corgi.jpg"/>
+                <CommentDetail author="Jorge Loredo" dateAgo = "Ayer" foto = "img/corgi.jpg"/>
             </div>
             <div class = "row">
-                <CommentDetail author="Narhariiiiii" dateAgo = "Ultima conexión en 2010 :(" foto = "img/narhari.jpg" />
-                <CommentDetail author="MOIK" dateAgo = "Ayer a las 2:00pm" foto = "img/moik.jpg"/>
+                <CommentDetail author="Narhariiiiii" dateAgo = "Ultima conexión en 2010 :(" foto = "img/corgi.jpg" />
+                <CommentDetail author="MOIK" dateAgo = "Ayer a las 2:00pm" foto = "img/corgi.jpg"/>
             </div>
             <div class = "row">
-                <CommentDetail author="Cesitar" dateAgo = "Inifinito" foto = "img/cesar.jpg"/>
-                <CommentDetail author="Urcadiz" dateAgo = "Ayer" foto = "img/urcadiz.jpg"/>
+                <CommentDetail author="Cesitar" dateAgo = "Inifinito" foto = "img/corgi.jpg"/>
+                <CommentDetail author="Urcadiz" dateAgo = "Ayer" foto = "img/corgi.jpg"/>
             </div>
         </div>
             
