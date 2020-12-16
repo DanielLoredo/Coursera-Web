@@ -6,52 +6,37 @@
         <title>Using Bootstrap</title>
         <link rel = "stylesheet" href = "css/bootstrap-grid.min.css">
         <link rel = "stylesheet" href = "css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class = "container-fluid">
-            <div class = "row">
-                <div class = "col-12 col-sm-12 col-md-5 col-lg-5 normalComment comment-left">
-                    <div class = "position-relative d-flex flex-row">
+        <div class = "container">
+        <div class="card text-center col-12 col-sm-12 col-md-6 col-lg-6 commentBox normalComment">
+            <div class="card-body">
+                <p class="card-text">
+                    <!-- CARD-->
+                    <div class = "position-relative d-flex flex-row card-content">
                         <div><img src = "img/corgi.jpg"></div>
                         <div class = "headerComment">
                             <div class = "nameComment">Daniel Loredo<span class = "dateComment">Diciembre 15, 2020</span></div>
                             <div class = "descriptionComment">Hola yo soy Daniel muchisimo gusto ojala nos podamos llevar a toda madre</div>
                         </div>
                     </div>
-                </div>
-                <div class = "col-12 col-sm-12 col-md-5 col-lg-5 offset-md-1 normalComment">
-                    <div class = "position-relative d-flex flex-row">
-                        <div><img src = "img/corgi.jpg"></div>
-                        <div class = "headerComment">
-                            <div class = "nameComment">Daniel Loredo<span class = "dateComment">Diciembre 15, 2020</span></div>
-                            <div class = "descriptionComment">Hola yo soy Daniel Muchisimo gusto ojala nos podamos llevar a toda madre</div>
-                        </div>
+                    <!--En of card-->
+                </p>
+            </div>
+            <div class="card-footer">
+                <div class = "row downButtons">
+                    <div class = "col acceptButton">
+                        Aceptar
+                    </div>
+                    <div class = "col denyButton">
+                        Rechazar
                     </div>
                 </div>
             </div>
-            <div class = "row">
-                <div class = "col-12 col-sm-12 col-md-5 col-lg-5 normalComment comment-left">
-                    <div class = "position-relative d-flex flex-row">
-                        <div><img src = "img/corgi.jpg"></div>
-                        <div class = "headerComment">
-                            <div class = "nameComment">Daniel Loredo<span class = "dateComment">Diciembre 15, 2020</span></div>
-                            <div class = "descriptionComment">Hola yo soy Daniel muchisimo gusto ojala nos podamos llevar a toda madre</div>
-                        </div>
-                    </div>
-                </div>
-                <div class = "col-12 col-sm-12 col-md-5 col-lg-5 offset-md-1 normalComment">
-                    <div class = "position-relative d-flex flex-row">
-                        <div><img src = "img/corgi.jpg"></div>
-                        <div class = "headerComment">
-                            <div class = "nameComment">Daniel Loredo<span class = "dateComment">Diciembre 15, 2020</span></div>
-                            <div class = "descriptionComment">Hola yo soy Daniel Muchisimo gusto ojala nos podamos llevar a toda madre</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        </div>  
+    </div>
 
         <script src = "js/bootstrap.min.js"></script>
         <script src = "js/jquery-3.5.1.min.js"></script>
