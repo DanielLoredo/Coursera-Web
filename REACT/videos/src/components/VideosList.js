@@ -4,7 +4,7 @@ import "../css/bootstrap.min.css";
 
 const VideosList = (props) => {
     const videos = props.videos.map((video) => {
-        return <VideoItem onVideoSelect={props.onVideoSelect} video = {video}/>
+        return <VideoItem key = {video.id.videoId} onVideoSelect={props.onVideoSelect} video = {video}/>
     })
 
     return (

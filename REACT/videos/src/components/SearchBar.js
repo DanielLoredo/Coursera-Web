@@ -16,7 +16,7 @@ class SearchBar extends React.Component {
 
     render () {
         return (
-        <div className = "container" style = {{marginTop: "20px"}}>
+        <div style = {{marginTop: "20px"}}>
             <form onSubmit={this.onFormSubmit}>
                 <div className = "form-group">
                     <label>Search Video</label>
