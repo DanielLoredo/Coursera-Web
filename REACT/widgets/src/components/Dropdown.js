@@ -1,8 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../css/bootstrap.min.css";
 
 const Dropdown = (props) => {
     const [open, setOpen] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        document.body.addEventListener("click", (event) => {
+            if(ref.current && ref.current.contains(event.target)){
+                return;
+            }
+            console.log("click"); 
+            setOpen(!open);
+        });
+    }, []);
 
     const renderedOptions = props.options.map((option) => {
 
@@ -21,7 +32,7 @@ const Dropdown = (props) => {
     });
 
     return (
-        <div className = "dropdown">
+        <div ref = {ref} className = "dropdown">
             <h6>Select a color</h6>
             
             <button onClick= {() => {setOpen(!open)}} className="btn dropdown-toggle" type="button">
