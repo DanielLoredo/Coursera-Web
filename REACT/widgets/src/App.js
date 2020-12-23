@@ -3,6 +3,8 @@ import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
 import Translate from "./components/Translate";
+import Router from "./components/Router";
+import Header from "./components/Header";
 
 const App = () => {
     const items = [
@@ -20,22 +22,22 @@ const App = () => {
         }
     ];
 
-    //const options = [
-    //    {
-    //        label: "This is color red",
-    //        value: "red"
-    //    },
-    //    {
-    //        label: "This is color green",
-    //        value: "green"
-    //    },
-    //    {
-    //        label: "This is color blue",
-    //        value: "blue"
-    //    }
-    //];
+    const options = [
+        {
+            label: "This is color red",
+            value: "red"
+        },
+        {
+            label: "This is color green",
+            value: "green"
+        },
+        {
+            label: "This is color blue",
+            value: "blue"
+        }
+    ];
 
-    //  [selected, setSelected] = useState(options[0])const;
+    const [selected, setSelected] = useState(options[0]);
     // const [showDropdown, setShowDropdown] = useState(true);
     // <Accordion className = "accordion" items = {items} />
     //<Search />
@@ -50,7 +52,24 @@ const App = () => {
 
     return (
     <div className = "container">
-        <Translate />
+        <Header />
+        <Router  path = "/">
+            <Accordion className = "accordion" items = {items} />
+        </Router>
+        <Router path = "/translate">
+            <Translate />
+        </Router>
+        <Router path = "/list">
+            <Search />
+        </Router>
+        <Router path = "/dropdown"> 
+            <Dropdown  
+                label = "Select a color"
+                options = {options}
+                selected = {selected}
+                onSelectedChange = {setSelected}
+            />
+        </Router>
     </div>
     );
 }
