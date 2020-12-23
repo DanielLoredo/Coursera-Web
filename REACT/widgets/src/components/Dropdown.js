@@ -33,7 +33,7 @@ const Dropdown = (props) => {
 
     return (
         <div ref = {ref} className = "dropdown">
-            <h6>Select a color</h6>
+            <h6>Selecta color</h6>
             
             <button onClick= {() => {setOpen(!open)}} className="btn dropdown-toggle" type="button">
                 {props.selected.label}
