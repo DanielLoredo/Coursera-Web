@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../css/bootstrap.min.css";
 
-const Dropdown = (props) => {
+
+const Dropdown = ({label, options, selected, onSelectedChange }) => {
     const [open, setOpen] = useState(false);
     const ref = useRef(null);
 
@@ -10,21 +11,20 @@ const Dropdown = (props) => {
             if(ref.current && ref.current.contains(event.target)){
                 return;
             }
-            console.log("click"); 
-            setOpen(!open);
+            
+            setOpen(false);
         });
     }, []);
 
-    const renderedOptions = props.options.map((option) => {
-
-        if(option.value === props.selected.value) {
+    const renderedOptions = options.map((option) => {
+        if(option.value === selected.value) {
             return null;
         }
 
         return (
             <a key = {option.value} 
                className = {`dropdown-item ${open ? "d-block" : "d-none"}`} href = "#"
-               onClick = {() => props.onSelectedChange(option)}
+               onClick = {() => {onSelectedChange(option); setOpen(!open)}}
             >
                 {option.label}
             </a>
@@ -33,12 +33,12 @@ const Dropdown = (props) => {
 
     return (
         <div ref = {ref} className = "dropdown">
-            <h6>Selecta color</h6>
+            <h4>{label}</h4>
             
             <button onClick= {() => {setOpen(!open)}} className="btn dropdown-toggle" type="button">
-                {props.selected.label}
+                {selected.label}
             </button>
-            <div>
+            <div >
                 {renderedOptions}
             </div>
         </div>
