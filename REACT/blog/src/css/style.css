@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+body {
+    background-color: white;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.normalComment {
+    background-color: white;
+    padding-top: 5px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 49%;
+    margin-top: 20px;
+}
+
+img {
+    margin-top: 8px;
+    height: 90px;
+    width: 90px;
+    border: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.headerComment {
+    padding-top: 5px;
+}
+
+.nameComment {
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+    padding-right: 2%;
+}
+
+.dateComment {
+    font-size: 15px;
+    float: right;
+    color: silver;
+}
+
+.descriptionComment {
+    padding-top: 10px;
+}
+
+.downButtons {
+    margin-top: 10px;
+    text-align: center;
+    height: 2em;
+}
+
+.acceptButton {
+    border-top: 2px solid green;
+    border-right: 2px solid green;
+    padding-top: 5px;
+}
+
+.denyButton {
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    padding-top: 5px;
+}
+
+.acceptButton:hover {
+    background-color: rgb(22, 116, 13);
+    color: white;
+    margin-bottom: 0px;
+}
+
+.denyButton:hover {
+    background-color: red;
+    color: white; 
+    margin-bottom: 0px;
+}
+
+
+
+
+

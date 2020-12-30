@@ -9,7 +9,7 @@ const CommentBox = props => {
                 <p class="card-text">
                     {props.children}
                 </p>
-                </div>
+            </div>
             <div class="card-footer">
                 <div class = "row downButtons">
                     <div class = "col acceptButton">
