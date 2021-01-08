@@ -13,9 +13,12 @@ class StreamList extends React.Component {
         return this.props.streams.map((stream) => {
             return (
                 <li key = {stream.description} className = "list-group-item">
-                    <div style = {{fontWeight: "bold", fontSize: "25px"}}>{stream.title}</div>
-                    
-                    {stream.description}
+                    <Link to = {`/streams/${stream.id}`} style = {{fontWeight: "bold", fontSize: "25px"}}>
+                        {stream.title}
+                    </Link>
+                    <div>
+                        {stream.description}
+                    </div>
                     {this.renderAdmin(stream)}
                 </li>
             );
@@ -27,7 +30,7 @@ class StreamList extends React.Component {
             return (
                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                     <Link to = {`/streams/edit/${stream.id}`} className="btn btn-primary">Edit</Link>
-                    <button className="btn btn-danger" type="button">Delete</button>
+                    <Link to = {`/streams/delete/${stream.id}`} className="btn btn-danger" type="button">Delete</Link>
                 </div>
             );
         }

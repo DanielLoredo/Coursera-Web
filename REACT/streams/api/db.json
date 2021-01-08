@@ -1,43 +1,10 @@
 {
   "streams": [
     {
-      "title": "My stream",
-      "description": "the best stream of all",
+      "title": "1First",
+      "description": "Helowjrqfijewjgwrnjrj",
+      "userId": "103953226913062279474",
       "id": 1
-    },
-    {
-      "title": "My stream",
-      "description": "the best stream of all",
-      "id": 2
-    },
-    {
-      "title": "My stream",
-      "description": "the best stream of all",
-      "id": 3
-    },
-    {
-      "title": "helloooooo",
-      "description": "a cul stream",
-      "userId": null,
-      "id": 4
-    },
-    {
-      "title": "helloooooo",
-      "description": "a cul stream",
-      "userId": null,
-      "id": 5
-    },
-    {
-      "title": "First Try",
-      "description": "Hey this is my first try",
-      "userId": "103953226913062279474",
-      "id": 6
-    },
-    {
-      "title": "second try",
-      "description": "hey",
-      "userId": "103953226913062279474",
-      "id": 7
     }
   ]
 }
