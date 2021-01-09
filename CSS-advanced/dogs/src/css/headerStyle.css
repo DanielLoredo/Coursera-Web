@@ -3,11 +3,163 @@
     background-image: 
         linear-gradient(
             to right bottom,
-            rgba(155, 218, 247, 0.671),
-            rgba(79, 161, 238, 0.568)),
+            rgba(0, 0, 0, 0.8),
+            rgba(98, 8, 110, 0.7)),
         url(../img/lazy-dog.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: center;
+    position: relative;
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo {
+    height: 20vh;
+    transition: all 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.title-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -70%);
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+.text-content {
+    color: white;
+    text-transform: uppercase;
+}
+
+.title-main-primary {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 20px;
+
+    animation: moveInLeft;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+}
+
+.title-main-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+
+    animation: moveInRight;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+}
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+
+    transition: all 0.2s;
+    position: relative;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+    transform: translate(0px, -3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.5);
+}
+.btn:active {
+    transform: translate(0px, -1px);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+}
+
+.btn-animated {
+    animation: moveInBottom;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-white::after {
+    background-color: white;
+}
+
+.btn:hover::after {
+    transform: scale(1.4, 1.6);
+    opacity: 0;
+}
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-120px, 0px);
+    }
+
+    75% {
+        transform: translate(10px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(120px, 0px);
+    }
+
+    75% {
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
