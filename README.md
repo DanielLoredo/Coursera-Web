@@ -1,3 +1,3 @@
-# Learning Front-end 
+# Learning Web Delevopment
 
-I'm learning React, Bootstrap and other tools for Web development :)
+I'm learning React, Advanced CSS, Node, and other tools for web development :)
