@@ -1,11 +1,17 @@
 // MIDLEWARE AND EXPRESS CONECTION FILE
 const express = require('express');
 const morgan = require('morgan');
+
 const tourRouter = require('./routes/tourRouter');
 const userRouter = require('./routes/userRouter');
 
 const app = express(); //use express
-app.use(morgan('dev'));
+
+console.log(process.env.NODE_ENV);
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
+
 app.use(express.json()); //middleWare to allow post requests
 // app.use(express.static(`${__dirname}/public`)); ADD AN STATIC FILE
 
