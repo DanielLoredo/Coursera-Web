@@ -4,7 +4,7 @@
   "description": "Project with node, express and MongoDB",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon server.js"
   },
   "author": "Daniel Loredo",
   "license": "ISC",
