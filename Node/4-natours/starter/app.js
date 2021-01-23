@@ -1,8 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
+const compression = require('compression');
 
 const tourRouter = require('./routes/tourRouter');
 const userRouter = require('./routes/userRouter');
+const reviewRouter = require('./routes/reviewRouter');
 const AppError = require('./utils/appError');
 
 const app = express(); //use express
@@ -11,6 +13,8 @@ console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
+
+app.use(compression());
 
 app.use(express.json()); //middleWare to allow post requests
 // app.use(express.static(`${__dirname}/public`)); ADD AN STATIC FILE
@@ -22,6 +26,7 @@ app.use((req, res, next) => {
 
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
+app.use('/api/v1/reviews', reviewRouter);
 
 // ERROR HANDLING
 app.all('*', (req, res, next) => {
